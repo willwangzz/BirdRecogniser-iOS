@@ -14,6 +14,8 @@
 		BED5CD4929E01974008F5F8E /* BirdRecogniser_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD4829E01974008F5F8E /* BirdRecogniser_iOSTests.swift */; };
 		BED5CD5329E01974008F5F8E /* BirdRecogniser_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD5229E01974008F5F8E /* BirdRecogniser_iOSUITests.swift */; };
 		BED5CD5529E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD5429E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift */; };
+		BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6129E01B35008F5F8E /* BRTabView.swift */; };
+		BED5CD6429E02BC4008F5F8E /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6329E02BC4008F5F8E /* CustomTabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		BED5CD4E29E01974008F5F8E /* BirdRecogniser-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BirdRecogniser-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED5CD5229E01974008F5F8E /* BirdRecogniser_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSUITests.swift; sourceTree = "<group>"; };
 		BED5CD5429E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BED5CD6129E01B35008F5F8E /* BRTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRTabView.swift; sourceTree = "<group>"; };
+		BED5CD6329E02BC4008F5F8E /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */,
 				BED5CD3929E01973008F5F8E /* ContentView.swift */,
+				BED5CD6129E01B35008F5F8E /* BRTabView.swift */,
+				BED5CD6329E02BC4008F5F8E /* CustomTabbarView.swift */,
 				BED5CD3B29E01974008F5F8E /* Assets.xcassets */,
 				BED5CD3D29E01974008F5F8E /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */,
+				BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
+				BED5CD6429E02BC4008F5F8E /* CustomTabbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
