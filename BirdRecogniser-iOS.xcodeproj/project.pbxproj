@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */; };
+		BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3929E01973008F5F8E /* ContentView.swift */; };
+		BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD3B29E01974008F5F8E /* Assets.xcassets */; };
+		BED5CD3F29E01974008F5F8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD3E29E01974008F5F8E /* Preview Assets.xcassets */; };
+		BED5CD4929E01974008F5F8E /* BirdRecogniser_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD4829E01974008F5F8E /* BirdRecogniser_iOSTests.swift */; };
+		BED5CD5329E01974008F5F8E /* BirdRecogniser_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD5229E01974008F5F8E /* BirdRecogniser_iOSUITests.swift */; };
+		BED5CD5529E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD5429E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED5CD4529E01974008F5F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED5CD2C29E01973008F5F8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED5CD3329E01973008F5F8E;
+			remoteInfo = "BirdRecogniser-iOS";
+		};
+		BED5CD4F29E01974008F5F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED5CD2C29E01973008F5F8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED5CD3329E01973008F5F8E;
+			remoteInfo = "BirdRecogniser-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BirdRecogniser-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSApp.swift; sourceTree = "<group>"; };
+		BED5CD3929E01973008F5F8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BED5CD3B29E01974008F5F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED5CD3E29E01974008F5F8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BED5CD4429E01974008F5F8E /* BirdRecogniser-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BirdRecogniser-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED5CD4829E01974008F5F8E /* BirdRecogniser_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSTests.swift; sourceTree = "<group>"; };
+		BED5CD4E29E01974008F5F8E /* BirdRecogniser-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BirdRecogniser-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED5CD5229E01974008F5F8E /* BirdRecogniser_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSUITests.swift; sourceTree = "<group>"; };
+		BED5CD5429E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED5CD3129E01973008F5F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4129E01974008F5F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4B29E01974008F5F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BED5CD2B29E01973008F5F8E = {
+			isa = PBXGroup;
+			children = (
+				BED5CD3629E01973008F5F8E /* BirdRecogniser-iOS */,
+				BED5CD4729E01974008F5F8E /* BirdRecogniser-iOSTests */,
+				BED5CD5129E01974008F5F8E /* BirdRecogniser-iOSUITests */,
+				BED5CD3529E01973008F5F8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BED5CD3529E01973008F5F8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */,
+				BED5CD4429E01974008F5F8E /* BirdRecogniser-iOSTests.xctest */,
+				BED5CD4E29E01974008F5F8E /* BirdRecogniser-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED5CD3629E01973008F5F8E /* BirdRecogniser-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */,
+				BED5CD3929E01973008F5F8E /* ContentView.swift */,
+				BED5CD3B29E01974008F5F8E /* Assets.xcassets */,
+				BED5CD3D29E01974008F5F8E /* Preview Content */,
+			);
+			path = "BirdRecogniser-iOS";
+			sourceTree = "<group>";
+		};
+		BED5CD3D29E01974008F5F8E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD3E29E01974008F5F8E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BED5CD4729E01974008F5F8E /* BirdRecogniser-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD4829E01974008F5F8E /* BirdRecogniser_iOSTests.swift */,
+			);
+			path = "BirdRecogniser-iOSTests";
+			sourceTree = "<group>";
+		};
+		BED5CD5129E01974008F5F8E /* BirdRecogniser-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD5229E01974008F5F8E /* BirdRecogniser_iOSUITests.swift */,
+				BED5CD5429E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift */,
+			);
+			path = "BirdRecogniser-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED5CD3329E01973008F5F8E /* BirdRecogniser-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED5CD5829E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOS" */;
+			buildPhases = (
+				BED5CD3029E01973008F5F8E /* Sources */,
+				BED5CD3129E01973008F5F8E /* Frameworks */,
+				BED5CD3229E01973008F5F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BirdRecogniser-iOS";
+			productName = "BirdRecogniser-iOS";
+			productReference = BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED5CD4329E01974008F5F8E /* BirdRecogniser-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED5CD5B29E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOSTests" */;
+			buildPhases = (
+				BED5CD4029E01974008F5F8E /* Sources */,
+				BED5CD4129E01974008F5F8E /* Frameworks */,
+				BED5CD4229E01974008F5F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED5CD4629E01974008F5F8E /* PBXTargetDependency */,
+			);
+			name = "BirdRecogniser-iOSTests";
+			productName = "BirdRecogniser-iOSTests";
+			productReference = BED5CD4429E01974008F5F8E /* BirdRecogniser-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BED5CD4D29E01974008F5F8E /* BirdRecogniser-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED5CD5E29E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOSUITests" */;
+			buildPhases = (
+				BED5CD4A29E01974008F5F8E /* Sources */,
+				BED5CD4B29E01974008F5F8E /* Frameworks */,
+				BED5CD4C29E01974008F5F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED5CD5029E01974008F5F8E /* PBXTargetDependency */,
+			);
+			name = "BirdRecogniser-iOSUITests";
+			productName = "BirdRecogniser-iOSUITests";
+			productReference = BED5CD4E29E01974008F5F8E /* BirdRecogniser-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED5CD2C29E01973008F5F8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BED5CD3329E01973008F5F8E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BED5CD4329E01974008F5F8E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BED5CD3329E01973008F5F8E;
+					};
+					BED5CD4D29E01974008F5F8E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BED5CD3329E01973008F5F8E;
+					};
+				};
+			};
+			buildConfigurationList = BED5CD2F29E01973008F5F8E /* Build configuration list for PBXProject "BirdRecogniser-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED5CD2B29E01973008F5F8E;
+			productRefGroup = BED5CD3529E01973008F5F8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED5CD3329E01973008F5F8E /* BirdRecogniser-iOS */,
+				BED5CD4329E01974008F5F8E /* BirdRecogniser-iOSTests */,
+				BED5CD4D29E01974008F5F8E /* BirdRecogniser-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED5CD3229E01973008F5F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED5CD3F29E01974008F5F8E /* Preview Assets.xcassets in Resources */,
+				BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4229E01974008F5F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4C29E01974008F5F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED5CD3029E01973008F5F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */,
+				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4029E01974008F5F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED5CD4929E01974008F5F8E /* BirdRecogniser_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5CD4A29E01974008F5F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED5CD5529E01974008F5F8E /* BirdRecogniser_iOSUITestsLaunchTests.swift in Sources */,
+				BED5CD5329E01974008F5F8E /* BirdRecogniser_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED5CD4629E01974008F5F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED5CD3329E01973008F5F8E /* BirdRecogniser-iOS */;
+			targetProxy = BED5CD4529E01974008F5F8E /* PBXContainerItemProxy */;
+		};
+		BED5CD5029E01974008F5F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED5CD3329E01973008F5F8E /* BirdRecogniser-iOS */;
+			targetProxy = BED5CD4F29E01974008F5F8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BED5CD5629E01974008F5F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BED5CD5729E01974008F5F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED5CD5929E01974008F5F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdRecogniser-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED5CD5A29E01974008F5F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BirdRecogniser-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BED5CD5C29E01974008F5F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdRecogniser-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdRecogniser-iOS";
+			};
+			name = Debug;
+		};
+		BED5CD5D29E01974008F5F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdRecogniser-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BirdRecogniser-iOS";
+			};
+			name = Release;
+		};
+		BED5CD5F29E01974008F5F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BirdRecogniser-iOS";
+			};
+			name = Debug;
+		};
+		BED5CD6029E01974008F5F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKVUT9CN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZongZheng.Wang.BirdRecogniser-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BirdRecogniser-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED5CD2F29E01973008F5F8E /* Build configuration list for PBXProject "BirdRecogniser-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED5CD5629E01974008F5F8E /* Debug */,
+				BED5CD5729E01974008F5F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED5CD5829E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED5CD5929E01974008F5F8E /* Debug */,
+				BED5CD5A29E01974008F5F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED5CD5B29E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED5CD5C29E01974008F5F8E /* Debug */,
+				BED5CD5D29E01974008F5F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED5CD5E29E01974008F5F8E /* Build configuration list for PBXNativeTarget "BirdRecogniser-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED5CD5F29E01974008F5F8E /* Debug */,
+				BED5CD6029E01974008F5F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BED5CD2C29E01973008F5F8E /* Project object */;
+}
