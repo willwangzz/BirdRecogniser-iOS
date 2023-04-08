@@ -47,7 +47,7 @@ struct BRTabView: View {
                     }
                     .tag(0)
 
-                Text("Second View")
+                TakeImagesView()
                     .tabItem {
                         Image(systemName: "2.circle")
                         Text("Second")

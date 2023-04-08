@@ -11,7 +11,7 @@ import SwiftUI
 struct BirdRecogniser_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BRTabView()
         }
     }
 }
