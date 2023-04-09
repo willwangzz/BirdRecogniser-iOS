@@ -18,6 +18,7 @@
 		BED5CD6429E02BC4008F5F8E /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6329E02BC4008F5F8E /* CustomTabbarView.swift */; };
 		BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */; };
 		BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */; };
+		BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BED5CD6329E02BC4008F5F8E /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
 		BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImagesView.swift; sourceTree = "<group>"; };
+		BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAccessManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */,
+				BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */,
 				BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */,
+				BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */,
 				BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
 				BED5CD6429E02BC4008F5F8E /* CustomTabbarView.swift in Sources */,
@@ -452,6 +456,8 @@
 				DEVELOPMENT_TEAM = UKVUT9CN77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need the photo library permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -481,6 +487,8 @@
 				DEVELOPMENT_TEAM = UKVUT9CN77;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need the photo library permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
