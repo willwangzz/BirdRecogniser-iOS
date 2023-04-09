@@ -16,11 +16,11 @@ struct RecogniserView: View {
             Button {
                 beginRecognising()
             } label: {
-                Text("开始识别")
+                Text("Begin recognition")
             }
             Spacer()
             if recogniserResult == nil {
-                Text("空")
+                Text("Empty")
             } else {
                 List(recogniserResult!, id: \.name) { result in
                     VStack {
