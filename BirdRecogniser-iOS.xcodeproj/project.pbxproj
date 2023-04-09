@@ -19,6 +19,30 @@
 		BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */; };
 		BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */; };
 		BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */; };
+		BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */; };
+		BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */; };
+		BED5CD7529E25744008F5F8E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7429E25744008F5F8E /* UIImageExtension.swift */; };
+		BED5CD8B29E25821008F5F8E /* WILD TURKEY4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7729E25821008F5F8E /* WILD TURKEY4.jpg */; };
+		BED5CD8C29E25821008F5F8E /* ABBOTTS BOOBY4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7829E25821008F5F8E /* ABBOTTS BOOBY4.jpg */; };
+		BED5CD8D29E25821008F5F8E /* ABBOTTS BOOBY0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7929E25821008F5F8E /* ABBOTTS BOOBY0.jpg */; };
+		BED5CD8E29E25821008F5F8E /* WILD TURKEY2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7A29E25821008F5F8E /* WILD TURKEY2.jpg */; };
+		BED5CD8F29E25821008F5F8E /* WILD TURKEY3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7B29E25821008F5F8E /* WILD TURKEY3.jpg */; };
+		BED5CD9029E25821008F5F8E /* ABBOTTS BOOBY1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7C29E25821008F5F8E /* ABBOTTS BOOBY1.jpg */; };
+		BED5CD9129E25821008F5F8E /* ABBOTTS BOOBY3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7D29E25821008F5F8E /* ABBOTTS BOOBY3.jpg */; };
+		BED5CD9229E25821008F5F8E /* WILD TURKEY1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7E29E25821008F5F8E /* WILD TURKEY1.jpg */; };
+		BED5CD9329E25821008F5F8E /* WILD TURKEY0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7F29E25821008F5F8E /* WILD TURKEY0.jpg */; };
+		BED5CD9429E25821008F5F8E /* ABBOTTS BOOBY2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8029E25821008F5F8E /* ABBOTTS BOOBY2.jpg */; };
+		BED5CD9529E25821008F5F8E /* EMU3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8129E25821008F5F8E /* EMU3.jpg */; };
+		BED5CD9629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8229E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg */; };
+		BED5CD9729E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8329E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL1.jpg */; };
+		BED5CD9829E25821008F5F8E /* EMU2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8429E25821008F5F8E /* EMU2.jpg */; };
+		BED5CD9929E25821008F5F8E /* EMU0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8529E25821008F5F8E /* EMU0.jpg */; };
+		BED5CD9A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL3.jpg */; };
+		BED5CD9B29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8729E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL2.jpg */; };
+		BED5CD9C29E25821008F5F8E /* EMU1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8829E25821008F5F8E /* EMU1.jpg */; };
+		BED5CD9D29E25821008F5F8E /* EMU4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8929E25821008F5F8E /* EMU4.jpg */; };
+		BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */; };
+		BED5CDA029E25995008F5F8E /* RecogniserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD9F29E25995008F5F8E /* RecogniserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +78,30 @@
 		BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImagesView.swift; sourceTree = "<group>"; };
 		BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAccessManager.swift; sourceTree = "<group>"; };
+		BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Bird_510_MobileNetV2_97.mlpackage; sourceTree = "<group>"; };
+		BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecognitionTool.swift; sourceTree = "<group>"; };
+		BED5CD7429E25744008F5F8E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		BED5CD7729E25821008F5F8E /* WILD TURKEY4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY4.jpg"; sourceTree = "<group>"; };
+		BED5CD7829E25821008F5F8E /* ABBOTTS BOOBY4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABBOTTS BOOBY4.jpg"; sourceTree = "<group>"; };
+		BED5CD7929E25821008F5F8E /* ABBOTTS BOOBY0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABBOTTS BOOBY0.jpg"; sourceTree = "<group>"; };
+		BED5CD7A29E25821008F5F8E /* WILD TURKEY2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY2.jpg"; sourceTree = "<group>"; };
+		BED5CD7B29E25821008F5F8E /* WILD TURKEY3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY3.jpg"; sourceTree = "<group>"; };
+		BED5CD7C29E25821008F5F8E /* ABBOTTS BOOBY1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABBOTTS BOOBY1.jpg"; sourceTree = "<group>"; };
+		BED5CD7D29E25821008F5F8E /* ABBOTTS BOOBY3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABBOTTS BOOBY3.jpg"; sourceTree = "<group>"; };
+		BED5CD7E29E25821008F5F8E /* WILD TURKEY1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY1.jpg"; sourceTree = "<group>"; };
+		BED5CD7F29E25821008F5F8E /* WILD TURKEY0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY0.jpg"; sourceTree = "<group>"; };
+		BED5CD8029E25821008F5F8E /* ABBOTTS BOOBY2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABBOTTS BOOBY2.jpg"; sourceTree = "<group>"; };
+		BED5CD8129E25821008F5F8E /* EMU3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU3.jpg; sourceTree = "<group>"; };
+		BED5CD8229E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL0.jpg"; sourceTree = "<group>"; };
+		BED5CD8329E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL1.jpg"; sourceTree = "<group>"; };
+		BED5CD8429E25821008F5F8E /* EMU2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU2.jpg; sourceTree = "<group>"; };
+		BED5CD8529E25821008F5F8E /* EMU0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU0.jpg; sourceTree = "<group>"; };
+		BED5CD8629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL3.jpg"; sourceTree = "<group>"; };
+		BED5CD8729E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL2.jpg"; sourceTree = "<group>"; };
+		BED5CD8829E25821008F5F8E /* EMU1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU1.jpg; sourceTree = "<group>"; };
+		BED5CD8929E25821008F5F8E /* EMU4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU4.jpg; sourceTree = "<group>"; };
+		BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL4.jpg"; sourceTree = "<group>"; };
+		BED5CD9F29E25995008F5F8E /* RecogniserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +152,7 @@
 		BED5CD3629E01973008F5F8E /* BirdRecogniser-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BED5CD6D29E242AC008F5F8E /* AI */,
 				BED5CD6829E0DF50008F5F8E /* TechDemos */,
 				BED5CD6529E0D2AB008F5F8E /* Tools */,
 				BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */,
@@ -146,6 +195,7 @@
 			children = (
 				BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */,
 				BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */,
+				BED5CD7429E25744008F5F8E /* UIImageExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -154,8 +204,46 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */,
+				BED5CD9F29E25995008F5F8E /* RecogniserView.swift */,
 			);
 			path = TechDemos;
+			sourceTree = "<group>";
+		};
+		BED5CD6D29E242AC008F5F8E /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD7629E25821008F5F8E /* TestImages */,
+				BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */,
+				BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		BED5CD7629E25821008F5F8E /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				BED5CD7729E25821008F5F8E /* WILD TURKEY4.jpg */,
+				BED5CD7829E25821008F5F8E /* ABBOTTS BOOBY4.jpg */,
+				BED5CD7929E25821008F5F8E /* ABBOTTS BOOBY0.jpg */,
+				BED5CD7A29E25821008F5F8E /* WILD TURKEY2.jpg */,
+				BED5CD7B29E25821008F5F8E /* WILD TURKEY3.jpg */,
+				BED5CD7C29E25821008F5F8E /* ABBOTTS BOOBY1.jpg */,
+				BED5CD7D29E25821008F5F8E /* ABBOTTS BOOBY3.jpg */,
+				BED5CD7E29E25821008F5F8E /* WILD TURKEY1.jpg */,
+				BED5CD7F29E25821008F5F8E /* WILD TURKEY0.jpg */,
+				BED5CD8029E25821008F5F8E /* ABBOTTS BOOBY2.jpg */,
+				BED5CD8129E25821008F5F8E /* EMU3.jpg */,
+				BED5CD8229E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg */,
+				BED5CD8329E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL1.jpg */,
+				BED5CD8429E25821008F5F8E /* EMU2.jpg */,
+				BED5CD8529E25821008F5F8E /* EMU0.jpg */,
+				BED5CD8629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL3.jpg */,
+				BED5CD8729E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL2.jpg */,
+				BED5CD8829E25821008F5F8E /* EMU1.jpg */,
+				BED5CD8929E25821008F5F8E /* EMU4.jpg */,
+				BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */,
+			);
+			path = TestImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +350,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */,
+				BED5CD9829E25821008F5F8E /* EMU2.jpg in Resources */,
+				BED5CD9629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg in Resources */,
+				BED5CD9D29E25821008F5F8E /* EMU4.jpg in Resources */,
+				BED5CD8D29E25821008F5F8E /* ABBOTTS BOOBY0.jpg in Resources */,
+				BED5CD9529E25821008F5F8E /* EMU3.jpg in Resources */,
+				BED5CD8F29E25821008F5F8E /* WILD TURKEY3.jpg in Resources */,
+				BED5CD9129E25821008F5F8E /* ABBOTTS BOOBY3.jpg in Resources */,
+				BED5CD8B29E25821008F5F8E /* WILD TURKEY4.jpg in Resources */,
+				BED5CD9C29E25821008F5F8E /* EMU1.jpg in Resources */,
+				BED5CD9A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL3.jpg in Resources */,
 				BED5CD3F29E01974008F5F8E /* Preview Assets.xcassets in Resources */,
+				BED5CD9029E25821008F5F8E /* ABBOTTS BOOBY1.jpg in Resources */,
+				BED5CD9729E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL1.jpg in Resources */,
+				BED5CD9229E25821008F5F8E /* WILD TURKEY1.jpg in Resources */,
+				BED5CD8E29E25821008F5F8E /* WILD TURKEY2.jpg in Resources */,
+				BED5CD9929E25821008F5F8E /* EMU0.jpg in Resources */,
 				BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */,
+				BED5CD9429E25821008F5F8E /* ABBOTTS BOOBY2.jpg in Resources */,
+				BED5CD9B29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL2.jpg in Resources */,
+				BED5CD9329E25821008F5F8E /* WILD TURKEY0.jpg in Resources */,
+				BED5CD8C29E25821008F5F8E /* ABBOTTS BOOBY4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +397,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */,
+				BED5CDA029E25995008F5F8E /* RecogniserView.swift in Sources */,
 				BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */,
+				BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */,
+				BED5CD7529E25744008F5F8E /* UIImageExtension.swift in Sources */,
 				BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */,
 				BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
 				BED5CD6429E02BC4008F5F8E /* CustomTabbarView.swift in Sources */,
 				BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */,
+				BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

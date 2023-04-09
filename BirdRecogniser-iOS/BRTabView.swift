@@ -64,7 +64,7 @@ struct BRTabView: View {
                         Text("Fourth")
                     }
                     .tag(3)
-                Text("Fifth View")
+                RecogniserView()
                     .tabItem {
                         Image(systemName: "5.circle")
                         Text("Fifth")
