@@ -15,7 +15,7 @@ struct TakeImagesView: View {
     @State private var image: UIImage = UIImage()
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center, spacing: 20) {
             Button {
                 showCameraPicker = true
             } label: {
@@ -28,7 +28,15 @@ struct TakeImagesView: View {
                 Text("Photo Library")
             }
             
+            
+            Divider()
+            
             Text("First text added by Bowen.")
+
+            Button {
+            } label: {
+                Text("Click Me")
+            }
             
             Image(uiImage: image)
                 .resizable()
