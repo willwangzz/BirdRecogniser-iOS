@@ -28,6 +28,8 @@ struct TakeImagesView: View {
                 Text("Photo Library")
             }
             
+            Text("First text added by Bowen.")
+            
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
