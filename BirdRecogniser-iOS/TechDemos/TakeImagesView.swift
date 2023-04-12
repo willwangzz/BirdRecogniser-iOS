@@ -28,10 +28,11 @@ struct TakeImagesView: View {
                 Text("Photo Library")
             }
             
-            
             Divider()
             
             Text("First text added by Bowen.")
+                .bold()
+                .foregroundColor(.red)
 
             Button {
             } label: {
