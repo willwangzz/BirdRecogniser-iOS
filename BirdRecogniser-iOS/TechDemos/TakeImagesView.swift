@@ -28,6 +28,18 @@ struct TakeImagesView: View {
                 Text("Photo Library")
             }
             
+            Divider()
+            
+            Text("Text added by Bowen")
+                .bold()
+                .foregroundColor(.green)
+            
+            Button {
+                
+            } label: {
+                Text("Click Me")
+            }
+            
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
