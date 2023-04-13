@@ -30,6 +30,12 @@ struct TakeImagesView: View {
             
             Text("Text added by Bowen")
             
+            Button {
+                
+            } label: {
+                Text("Click Me")
+            }
+            
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
