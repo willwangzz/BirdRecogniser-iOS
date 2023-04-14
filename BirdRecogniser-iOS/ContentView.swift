@@ -18,6 +18,7 @@ struct ContentView: View {
                     .background(Color.red)
             } else {
                 Text("Hello, world!")
+                    .background(Rectangle().fill(.red), alignment: .center)
             }
         }
         .padding()
