@@ -13,10 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if #available(iOS 15, *) {
+                Text("Hello, world!")
+                    .background(Color.red)
+            } else {
+                Text("Hello, world!")
+                    .background(Rectangle().fill(.red), alignment: .center)
+            }
         }
         .padding()
-        .background(.red)
+        
     }
 }
 

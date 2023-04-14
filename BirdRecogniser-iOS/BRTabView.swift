@@ -23,6 +23,7 @@ struct CustomTabItemView: View {
     let height: CGFloat
 
     var body: some View {
+        
         VStack(spacing: 0) {
             Image(systemName: image)
                 .font(.title)
@@ -30,7 +31,7 @@ struct CustomTabItemView: View {
                 .font(.caption)
         }
         .frame(height: height)
-        .background(.red)
+        
     }
 }
 
@@ -40,7 +41,7 @@ struct BRTabView: View {
     
     var body: some View {
             TabView(selection: $selectedTab) {
-                Text("First View")
+                ContentView()
                     .tabItem {
                         Image(systemName: "1.circle")
                         Text("First")
