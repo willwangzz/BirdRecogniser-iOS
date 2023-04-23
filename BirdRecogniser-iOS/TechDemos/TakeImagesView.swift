@@ -35,7 +35,8 @@ struct TakeImagesView: View {
                 .foregroundColor(.green)
             
             Button {
-                
+                let vet = (name: "aaa", xvalue: 1)
+                print("\(vet.1)")
             } label: {
                 Text("Click Me")
             }

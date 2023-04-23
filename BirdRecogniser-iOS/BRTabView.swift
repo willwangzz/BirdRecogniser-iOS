@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-//struct CustomTabViewStyle: TabViewStyle {
-//    static func _makeView<SelectionValue>(value: _GraphValue<_TabViewValue<CustomTabViewStyle, SelectionValue>>, inputs: _ViewInputs) -> _ViewOutputs where SelectionValue : Hashable {
-//        <#code#>
-//    }
-//
-//    static func _makeViewList<SelectionValue>(value: _GraphValue<_TabViewValue<CustomTabViewStyle, SelectionValue>>, inputs: _ViewListInputs) -> _ViewListOutputs where SelectionValue : Hashable {
-//        <#code#>
-//    }
-//}
-
 struct CustomTabItemView: View {
     let title: String
     let image: String
@@ -41,34 +31,28 @@ struct BRTabView: View {
     
     var body: some View {
             TabView(selection: $selectedTab) {
-                ContentView()
+                RecogniserView()
                     .tabItem {
-                        Image(systemName: "1.circle")
-                        Text("First")
-                    }
-                    .tag(0)
-
-                TakeImagesView()
-                    .tabItem {
-                        Image(systemName: "2.circle")
-                        Text("Second")
+                        Image("tab-recogniser")
+                        Text("Recognise")
                     }
                     .tag(1)
                 Text("Middle View")
                     .tabItem {
-                        Image("icon")
+                        Image("tab-camera")
+                        Text("Take a Photo")
                     }
                     .tag(2)
-                Text("Fourth View")
+                TakeImagesView()
                     .tabItem {
-                        Image(systemName: "4.circle")
-                        Text("Fourth")
+                        Image("tab-contribution")
+                        Text("Contribution")
                     }
                     .tag(3)
-                RecogniserView()
+                RecogniserDemoView()
                     .tabItem {
-                        Image(systemName: "5.circle")
-                        Text("Fifth")
+                        Image("tab-about")
+                        Text("About us")
                     }
                     .tag(4)
             }

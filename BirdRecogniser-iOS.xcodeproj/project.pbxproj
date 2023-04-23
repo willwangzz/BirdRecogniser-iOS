@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE33D4B029EAAD35002820C8 /* RecogniserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4AF29EAAD35002820C8 /* RecogniserView.swift */; };
+		BE33D4B529EAB462002820C8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4B429EAB462002820C8 /* UIColorExtension.swift */; };
+		BE33D4B729EABF15002820C8 /* RecogniserButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4B629EABF15002820C8 /* RecogniserButton.swift */; };
+		BE33D4B929ED3053002820C8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4B829ED3053002820C8 /* Theme.swift */; };
+		BE33D4BB29ED3D2F002820C8 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4BA29ED3D2F002820C8 /* UIFontExtension.swift */; };
+		BE33D4BD29F4E1E4002820C8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4BC29F4E1E4002820C8 /* ViewExtension.swift */; };
+		BE33D4BF29F4F116002820C8 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4BE29F4F116002820C8 /* PhotoDetailView.swift */; };
 		BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */; };
 		BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3929E01973008F5F8E /* ContentView.swift */; };
 		BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD3B29E01974008F5F8E /* Assets.xcassets */; };
@@ -41,7 +48,7 @@
 		BED5CD9C29E25821008F5F8E /* EMU1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8829E25821008F5F8E /* EMU1.jpg */; };
 		BED5CD9D29E25821008F5F8E /* EMU4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8929E25821008F5F8E /* EMU4.jpg */; };
 		BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */; };
-		BED5CDA029E25995008F5F8E /* RecogniserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD9F29E25995008F5F8E /* RecogniserView.swift */; };
+		BED5CDA029E25995008F5F8E /* RecogniserDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE33D4AF29EAAD35002820C8 /* RecogniserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserView.swift; sourceTree = "<group>"; };
+		BE33D4B429EAB462002820C8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BE33D4B629EABF15002820C8 /* RecogniserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserButton.swift; sourceTree = "<group>"; };
+		BE33D4B829ED3053002820C8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BE33D4BA29ED3D2F002820C8 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		BE33D4BC29F4E1E4002820C8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		BE33D4BE29F4F116002820C8 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BirdRecogniser-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSApp.swift; sourceTree = "<group>"; };
 		BED5CD3929E01973008F5F8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,7 +113,7 @@
 		BED5CD8829E25821008F5F8E /* EMU1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU1.jpg; sourceTree = "<group>"; };
 		BED5CD8929E25821008F5F8E /* EMU4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EMU4.jpg; sourceTree = "<group>"; };
 		BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL4.jpg"; sourceTree = "<group>"; };
-		BED5CD9F29E25995008F5F8E /* RecogniserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserView.swift; sourceTree = "<group>"; };
+		BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE33D4AE29EAAD24002820C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE33D4B129EAB0F7002820C8 /* Recogniser */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE33D4B129EAB0F7002820C8 /* Recogniser */ = {
+			isa = PBXGroup;
+			children = (
+				BE33D4AF29EAAD35002820C8 /* RecogniserView.swift */,
+				BE33D4B629EABF15002820C8 /* RecogniserButton.swift */,
+				BE33D4BE29F4F116002820C8 /* PhotoDetailView.swift */,
+			);
+			path = Recogniser;
+			sourceTree = "<group>";
+		};
 		BED5CD2B29E01973008F5F8E = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +182,7 @@
 		BED5CD3629E01973008F5F8E /* BirdRecogniser-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BE33D4AE29EAAD24002820C8 /* UI */,
 				BED5CD6D29E242AC008F5F8E /* AI */,
 				BED5CD6829E0DF50008F5F8E /* TechDemos */,
 				BED5CD6529E0D2AB008F5F8E /* Tools */,
@@ -191,8 +224,12 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */,
+				BE33D4BC29F4E1E4002820C8 /* ViewExtension.swift */,
 				BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */,
 				BED5CD7429E25744008F5F8E /* UIImageExtension.swift */,
+				BE33D4B429EAB462002820C8 /* UIColorExtension.swift */,
+				BE33D4BA29ED3D2F002820C8 /* UIFontExtension.swift */,
+				BE33D4B829ED3053002820C8 /* Theme.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -201,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */,
-				BED5CD9F29E25995008F5F8E /* RecogniserView.swift */,
+				BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */,
 			);
 			path = TechDemos;
 			sourceTree = "<group>";
@@ -394,15 +431,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */,
-				BED5CDA029E25995008F5F8E /* RecogniserView.swift in Sources */,
+				BE33D4BB29ED3D2F002820C8 /* UIFontExtension.swift in Sources */,
+				BE33D4BF29F4F116002820C8 /* PhotoDetailView.swift in Sources */,
+				BE33D4B029EAAD35002820C8 /* RecogniserView.swift in Sources */,
+				BED5CDA029E25995008F5F8E /* RecogniserDemoView.swift in Sources */,
 				BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */,
+				BE33D4B729EABF15002820C8 /* RecogniserButton.swift in Sources */,
+				BE33D4BD29F4E1E4002820C8 /* ViewExtension.swift in Sources */,
 				BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */,
+				BE33D4B529EAB462002820C8 /* UIColorExtension.swift in Sources */,
 				BED5CD7529E25744008F5F8E /* UIImageExtension.swift in Sources */,
 				BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */,
 				BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
 				BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */,
 				BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */,
+				BE33D4B929ED3053002820C8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

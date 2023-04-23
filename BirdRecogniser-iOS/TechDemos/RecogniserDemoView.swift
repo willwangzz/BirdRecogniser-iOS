@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreML
 
-struct RecogniserView: View {
+struct RecogniserDemoView: View {
     @State var recogniserResult: [BirdRecognisitionResult]?
     
     var body: some View {
@@ -40,8 +40,8 @@ struct RecogniserView: View {
     }
 }
 
-struct RecogniserView_Previews: PreviewProvider {
+struct RecogniserDemoView_Previews: PreviewProvider {
     static var previews: some View {
-        RecogniserView()
+        RecogniserDemoView()
     }
 }
