@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct PhotoDetailView: View {
+    
+    var image = UIImage(named: "EMU0.jpg")!
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            GeometryReader { geo in
+                HStack(alignment: .center) {
+                    VStack {
+                        Image(uiImage: image)
+                            .resizable()
+                            .frame(width: geo.size.width, height: geo.size.width)
+                        Rectangle()
+                            .fill(.clear)
+                            .frame(height: 30)
+                        Button("Recognise") {
+                            
+                        }
+                        .font(Theme.miniHeaderFont.toFont())
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 40.0)
+                        .frame(height: 40)
+                        .background(Theme.mainColor?.toColor())
+                        .cornerRadius(20)
+                    }
+                }
+                .frame(height: geo.size.height)
+            }
+            .navigationTitle("Photo Detail")
+            .navigationBarTitleDisplayMode(.inline)
+            .addMainGradientBackground()
+        }
     }
 }
 
