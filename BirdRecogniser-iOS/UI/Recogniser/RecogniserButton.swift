@@ -41,9 +41,8 @@ struct RecogniserButton: View {
         .addRecogniseButtonBackgroundImage(backgroundImageName)
         .background(UIColor(hex: "#F6F3EE")!.toColor())
         .cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
-        .shadow(radius: 20)
+        .shadow(radius: Theme.shadowRadius)
         .coordinateSpace(name: "MainZStack")
-        
     }
 }
 

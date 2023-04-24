@@ -8,9 +8,17 @@
 import SwiftUI
 
 extension View {
-    func addRecogniseButtonBackgroundImage(_ imageName: String) -> some View {
-        ZStack(alignment: .bottomTrailing) {
+    func addRecogniseButtonBackgroundImage(_ imageName: String, aligment: Alignment = .bottomTrailing) -> some View {
+        ZStack(alignment: aligment) {
             Image(imageName)
+            
+            self
+        }
+    }
+    
+    func addContributeSubmittedBackgroundImage() -> some View {
+        ZStack(alignment: .bottomTrailing) {
+            Image("contribute-submitted")
             
             self
         }
@@ -23,5 +31,30 @@ extension View {
                                                 UIColor(hex: "#D2DEDA")!.toColor()],
                                        startPoint: .top,
                                        endPoint: .bottom))
+    }
+}
+
+//MARK: - Button Style
+extension View {
+    func addButtonStyle(_ backgroundColor: UIColor) -> some View {
+        self
+            .font(Theme.miniHeaderFont.toFont())
+            .foregroundColor(.white)
+            .padding(.horizontal, 40.0)
+            .frame(height: 40)
+            .background(backgroundColor.toColor())
+            .cornerRadius(20)
+    }
+}
+
+//MARK: - Conditional Modifier
+
+extension View {
+    @ViewBuilder func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View {
+        if condition {
+            transform(self)
+        } else {
+            self
+        }
     }
 }

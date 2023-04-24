@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhotoDetailView: View {
     
-    var image = UIImage(named: "EMU0.jpg")!
+    var image: UIImage
     
     var body: some View {
         NavigationView {
@@ -44,6 +44,6 @@ struct PhotoDetailView: View {
 
 struct PhotoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoDetailView()
+        PhotoDetailView(image: UIImage(named: "EMU0.jpg")!)
     }
 }

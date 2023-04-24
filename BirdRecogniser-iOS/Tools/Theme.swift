@@ -24,4 +24,7 @@ struct Theme {
     static let textFont = UIFont.systemFont(ofSize: 14, weight: .bold)
     static let miniTextFont = UIFont.systemFont(ofSize: 12)
     
+    // MARK: - Shadow
+    static let shadowRadius = CGFloat(30)
+    
 }
