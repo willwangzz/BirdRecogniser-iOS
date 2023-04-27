@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContributeView: View {
+    var isSubmitted: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if isSubmitted {
+            ContributeSuccessView()
+        } else {
+            ContributeNewView(birdName: "", birdInfomation: "", photo: "")
+        }
+        
     }
 }
 
 struct ContributeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContributeView()
+        ContributeView(isSubmitted: true)
     }
 }

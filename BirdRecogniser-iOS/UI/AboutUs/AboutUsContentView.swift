@@ -19,15 +19,18 @@ struct AboutUsContentView: View {
             Text(title)
                 .foregroundColor(Theme.mainColor?.toColor())
                 .font(Theme.miniHeaderFont.toFont())
-            Rectangle().fill(.clear).frame(height: 1)
+            Spacer()
+                .frame(height: 5)
             Text(content)
                 .foregroundColor(UIColor.init(hex: "#738687")?.toColor())
                 .font(Theme.nanoHeaderFont.toFont())
                 .padding(.top, 1.0)
             
-            
+            Rectangle()
+                .fill(.clear)
+                .frame(height: 20)
         }
-        .padding(.all, 30.0)
+        .padding([.top, .leading, .trailing], 30.0)
         .if(backgroundImageName != nil) { view in
             view.addRecogniseButtonBackgroundImage(backgroundImageName!, aligment: .bottomLeading)
         }

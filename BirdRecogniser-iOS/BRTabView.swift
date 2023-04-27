@@ -36,25 +36,25 @@ struct BRTabView: View {
                         Image("tab-recogniser")
                         Text("Recognise")
                     }
-                    .tag(1)
-                Text("Middle View")
-                    .tabItem {
-                        Image("tab-camera")
-                        Text("Take a Photo")
-                    }
-                    .tag(2)
-                TakeImagesView()
+                    .tag(0)
+                ContributeView()
                     .tabItem {
                         Image("tab-contribution")
                         Text("Contribution")
                     }
-                    .tag(3)
-                RecogniserDemoView()
+                    .tag(1)
+                AboutUsView()
                     .tabItem {
                         Image("tab-about")
                         Text("About us")
                     }
-                    .tag(4)
+                    .tag(2)
+                RecogniserDemoView()
+                    .tabItem {
+                        Image("tab-recogniser")
+                        Text("RecogniseDemo")
+                    }
+                    .tag(3)
             }
         }
 }
