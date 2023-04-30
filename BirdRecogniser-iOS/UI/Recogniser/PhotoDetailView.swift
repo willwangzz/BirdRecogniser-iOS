@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PhotoDetailView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var image: UIImage
     
     var body: some View {
@@ -23,7 +25,7 @@ struct PhotoDetailView: View {
                             .fill(.clear)
                             .frame(height: 30)
                         Button("Recognise") {
-                            
+                            recogniseImage()
                         }
                         .font(Theme.miniHeaderFont.toFont())
                         .foregroundColor(.white)
@@ -35,10 +37,21 @@ struct PhotoDetailView: View {
                 }
                 .frame(height: geo.size.height)
             }
-            .navigationTitle("Photo Detail")
-            .navigationBarTitleDisplayMode(.inline)
             .addMainGradientBackground()
         }
+        .navigationTitle("Photo Detail")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }, label: {
+            Image("navigation-back")
+        }))
+    }
+    
+    private func recogniseImage() {
+        let recognitionTool = BirdRecognitionTool.shared
+        let result = recognitionTool.recognise(bird: image)
     }
 }
 

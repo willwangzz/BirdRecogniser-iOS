@@ -23,6 +23,7 @@ struct RecogniserButton: View {
             VStack(alignment: .leading) {
                 Text(title)
                     .font(Theme.miniHeaderFont.toFont())
+                    .foregroundColor(Theme.mainColor?.toColor())
                 Text(subtitle)
                     .font(Theme.textFont.toFont())
                     .foregroundColor(UIColor(hex: "#738687")!.toColor())

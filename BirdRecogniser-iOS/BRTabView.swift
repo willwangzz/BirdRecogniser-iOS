@@ -26,6 +26,7 @@ struct CustomTabItemView: View {
 }
 
 struct BRTabView: View {
+    
     @State private var selectedTab = 0
     
     
@@ -56,6 +57,7 @@ struct BRTabView: View {
                     }
                     .tag(3)
             }
+            
         }
 }
 

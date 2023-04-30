@@ -35,7 +35,7 @@ struct RecogniserDemoView: View {
     
     func beginRecognising() {
         guard let image = UIImage(named: "EMU3.jpg") else { return }
-        let result = BirdRecognitionTool().recognise(bird: image)
+        let result = BirdRecognitionTool.shared.recognise(bird: image)
         self.recogniserResult = result
     }
 }

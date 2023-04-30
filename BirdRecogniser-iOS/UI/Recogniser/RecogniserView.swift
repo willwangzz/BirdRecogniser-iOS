@@ -8,34 +8,83 @@
 import SwiftUI
 
 struct RecogniserView: View {
+    
+    @State private var showCameraPicker = false
+    @State private var showPhotoPicker = false
+    
+    @State private var imageDidSet = false
+    
+    @State private var image: UIImage? {
+        didSet {
+            if oldValue != image {
+                imageDidSet = true
+            }
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            GeometryReader { geo in
-                HStack(alignment: .center) {
-                    VStack {
+            VStack {
+                Spacer()
+                
+                NavigationLink(isActive: $imageDidSet) {
+                    if let birdImage = image {
+                        PhotoDetailView(image: birdImage)
+                    }
+                } label: {
+                    Button {
+                        print("From Library")
+                        showPhotoPicker = true
+                    } label: {
                         RecogniserButton(title: "From Library",
                                          subtitle: "Select your photos from your library",
                                          note: "Select your photo",
                                          backgroundImageName: "recogniser-select-photo-background")
-                        .frame(height: 185)
-                        Rectangle()
-                            .fill(.clear)
-                            .frame(height: 30)
+                        .frame(height: 200)
+                    }
+                }
+                
+                Spacer()
+                
+                NavigationLink(isActive: $imageDidSet) {
+                    if let birdImage = image {
+                        PhotoDetailView(image: birdImage)
+                    }
+                } label: {
+                    Button(action: {
+                        showCameraPicker = true
+                    }, label: {
                         RecogniserButton(title: "Take a photo",
                                          subtitle: "Take a photo to recognise",
                                          note: "Take a photo",
                                          backgroundImageName: "recogniser-take-photo-background")
-                        .frame(height: 185)
-                    }
-                    .padding(.all, 30.0)
+                        .frame(height: 200)
+                    })
                 }
-                .frame(height: geo.size.height)
+                
+                Spacer()
             }
+            .padding(30)
             .navigationTitle("Bird Recognition")
             .navigationBarTitleDisplayMode(.inline)
             .addMainGradientBackground()
+            .fullScreenCover(isPresented: $showCameraPicker) {
+                ImagePicker(sourceType: .camera) { image in
+                    self.image = image
+                }
+                .ignoresSafeArea()
+            }
+            .sheet(isPresented: $showPhotoPicker) {
+                ImagePicker(sourceType: .photoLibrary) { image in
+                    self.image = image
+                }
+                .ignoresSafeArea()
+            }
+            
         }
     }
+    
+    
 }
 
 

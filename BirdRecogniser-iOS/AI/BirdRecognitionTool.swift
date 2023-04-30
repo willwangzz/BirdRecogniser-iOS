@@ -18,7 +18,13 @@ struct BirdRecognisitionResult {
     }
 }
 
-struct BirdRecognitionTool {
+class BirdRecognitionTool {
+    
+    static let shared = BirdRecognitionTool()
+    
+    private init() {
+    }
+    
     func recognise(bird image: UIImage) -> [BirdRecognisitionResult]? {
         guard let resizedImage = image.resize(to: .init(width: 224, height: 224))?.cgImage else { return nil }
         do {
