@@ -34,7 +34,13 @@ final class BirdRecogniser_iOSTests: XCTestCase {
         XCTAssertLessThanOrEqual(3, result!.count)
     }
     
-    
+    func testImageResize() throws {
+        let testImage = UIImage(named: "testImage.png")
+        XCTAssertNotNil(testImage)
+        let resizedImage = testImage!.resize(to: .init(width: 224, height: 224))
+        XCTAssertNotNil(resizedImage)
+        XCTAssertEqual(CGSize(width: 224, height: 224), resizedImage!.size)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

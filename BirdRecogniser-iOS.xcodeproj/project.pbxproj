@@ -59,6 +59,8 @@
 		BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */; };
 		BED5CDA029E25995008F5F8E /* RecogniserDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */; };
 		BEECBB9829FCD994006B805E /* NavigationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9729FCD994006B805E /* NavigationDemoView.swift */; };
+		BEECBB9A29FE6F25006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
+		BEECBB9C29FE70A9006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,7 @@
 		BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ABYSSINIAN GROUND HORNBILL4.jpg"; sourceTree = "<group>"; };
 		BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserDemoView.swift; sourceTree = "<group>"; };
 		BEECBB9729FCD994006B805E /* NavigationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemoView.swift; sourceTree = "<group>"; };
+		BEECBB9929FE6F25006B805E /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD4829E01974008F5F8E /* BirdRecogniser_iOSTests.swift */,
+				BEECBB9929FE6F25006B805E /* testImage.png */,
 			);
 			path = "BirdRecogniser-iOSTests";
 			sourceTree = "<group>";
@@ -433,6 +437,7 @@
 				BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */,
 				BED5CD9829E25821008F5F8E /* EMU2.jpg in Resources */,
 				BED5CD9629E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL0.jpg in Resources */,
+				BEECBB9C29FE70A9006B805E /* testImage.png in Resources */,
 				BED5CD9D29E25821008F5F8E /* EMU4.jpg in Resources */,
 				BED5CD8D29E25821008F5F8E /* ABBOTTS BOOBY0.jpg in Resources */,
 				BED5CD9529E25821008F5F8E /* EMU3.jpg in Resources */,
@@ -459,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEECBB9A29FE6F25006B805E /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

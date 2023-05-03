@@ -33,7 +33,6 @@ struct RecogniserView: View {
                     }
                 } label: {
                     Button {
-                        print("From Library")
                         showPhotoPicker = true
                     } label: {
                         RecogniserButton(title: "From Library",
@@ -83,8 +82,6 @@ struct RecogniserView: View {
             
         }
     }
-    
-    
 }
 
 
