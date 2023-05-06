@@ -11,7 +11,7 @@ struct RecogniseResultDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    var image: UIImage
+    @Binding var image: UIImage?
     
     var body: some View {
         GeometryReader { geo in
@@ -23,11 +23,13 @@ struct RecogniseResultDetailView: View {
                     Text("Possibility: 95%")
                         .font(Theme.textFont.toFont())
                 }
+                if let _ = image {
+                    Image(uiImage: image!)
+                        .resizable()
+                        .frame(width: geo.size.width - 60, height: geo.size.width - 60)
+                        .cornerRadius(30)
+                }
                 
-                Image(uiImage: image)
-                    .resizable()
-                    .frame(width: geo.size.width - 60, height: geo.size.width - 60)
-                    .cornerRadius(30)
                 Rectangle()
                     .fill(.clear)
                     .frame(height: 10)
@@ -40,7 +42,7 @@ struct RecogniseResultDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
+            self.image = nil
         }, label: {
             Image("navigation-back")
         }))
@@ -50,13 +52,15 @@ struct RecogniseResultDetailView: View {
 }
 
 struct RecogniseResultDetailView_Previews: PreviewProvider {
+    
+    @State static var image = UIImage(named: "EMU0.jpg")
     static var previews: some View {
         if #available(iOS 16.0, *) {
             NavigationStack {
-                RecogniseResultDetailView(image: UIImage(named: "EMU0.jpg")!)
+                RecogniseResultDetailView(image: $image)
             }
         } else {
-            RecogniseResultDetailView(image: UIImage(named: "EMU0.jpg")!)
+            RecogniseResultDetailView(image: $image)
         }
         
     }

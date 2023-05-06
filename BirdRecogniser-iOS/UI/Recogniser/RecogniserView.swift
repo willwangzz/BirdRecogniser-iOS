@@ -16,8 +16,10 @@ struct RecogniserView: View {
     
     @State private var image: UIImage? {
         didSet {
-            if oldValue != image {
+            if let _ = image, oldValue != image {
                 imageDidSet = true
+            } else {
+                imageDidSet = false
             }
         }
     }
@@ -28,8 +30,8 @@ struct RecogniserView: View {
                 Spacer()
                 
                 NavigationLink(isActive: $imageDidSet) {
-                    if let birdImage = image {
-                        PhotoDetailView(image: birdImage)
+                    if image != nil {
+                        PhotoDetailView(image: self.$image)
                     }
                 } label: {
                     Button {
@@ -46,8 +48,8 @@ struct RecogniserView: View {
                 Spacer()
                 
                 NavigationLink(isActive: $imageDidSet) {
-                    if let birdImage = image {
-                        PhotoDetailView(image: birdImage)
+                    if image != nil {
+                        PhotoDetailView(image: $image)
                     }
                 } label: {
                     Button(action: {

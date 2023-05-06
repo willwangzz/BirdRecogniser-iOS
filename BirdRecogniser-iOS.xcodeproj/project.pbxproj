@@ -61,6 +61,7 @@
 		BEECBB9829FCD994006B805E /* NavigationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9729FCD994006B805E /* NavigationDemoView.swift */; };
 		BEECBB9A29FE6F25006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 		BEECBB9C29FE70A9006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
+		BEECBB9F2A0611F9006B805E /* PopToRootDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniserDemoView.swift; sourceTree = "<group>"; };
 		BEECBB9729FCD994006B805E /* NavigationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemoView.swift; sourceTree = "<group>"; };
 		BEECBB9929FE6F25006B805E /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
+		BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 				BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */,
 				BEECBB9729FCD994006B805E /* NavigationDemoView.swift */,
 				BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */,
+				BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */,
 			);
 			path = TechDemos;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				BED5CD7529E25744008F5F8E /* UIImageExtension.swift in Sources */,
 				BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */,
 				BE33D4D029F63322002820C8 /* AboutUsTitleView.swift in Sources */,
+				BEECBB9F2A0611F9006B805E /* PopToRootDemo.swift in Sources */,
 				BE33D4CE29F62F33002820C8 /* AboutUsView.swift in Sources */,
 				BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
