@@ -59,7 +59,6 @@
 		BED5CD9E29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD8A29E25821008F5F8E /* ABYSSINIAN GROUND HORNBILL4.jpg */; };
 		BED5CDA029E25995008F5F8E /* RecogniserDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD9F29E25995008F5F8E /* RecogniserDemoView.swift */; };
 		BEECBB9829FCD994006B805E /* NavigationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9729FCD994006B805E /* NavigationDemoView.swift */; };
-		BEECBB9A29FE6F25006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 		BEECBB9C29FE70A9006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 		BEECBB9F2A0611F9006B805E /* PopToRootDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */; };
 /* End PBXBuildFile section */
@@ -180,9 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				BE33D4AF29EAAD35002820C8 /* RecogniserView.swift */,
-				BE33D4B629EABF15002820C8 /* RecogniserButton.swift */,
 				BE33D4BE29F4F116002820C8 /* PhotoDetailView.swift */,
 				BE33D4C029F5DEC1002820C8 /* RecogniseResultDetailView.swift */,
+				BE33D4B629EABF15002820C8 /* RecogniserButton.swift */,
 			);
 			path = Recogniser;
 			sourceTree = "<group>";
@@ -467,7 +466,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEECBB9A29FE6F25006B805E /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

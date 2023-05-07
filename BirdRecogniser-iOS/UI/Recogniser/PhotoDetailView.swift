@@ -15,6 +15,8 @@ struct PhotoDetailView: View {
     
     @State var isShowResult: Bool = false
     
+    @State var birdRecognitionResults: [BirdRecognisitionResult]?
+    
     var body: some View {
         GeometryReader { geo in
             HStack(alignment: .center) {
@@ -22,17 +24,23 @@ struct PhotoDetailView: View {
                     if let _ = image {
                         Image(uiImage: image!)
                             .resizable()
-                            .frame(width: geo.size.width, height: geo.size.width)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geo.size.width, height: geo.size.width * (image?.size.height ?? 1) / (image?.size.width ?? 1))
                     }
                     
                     Spacer()
                         .frame(height: 30)
                     
                     NavigationLink(isActive: self.$isShowResult) {
-                        RecogniseResultDetailView(image: self.$image)
+                        if let result = birdRecognitionResults?.first {
+                            RecogniseResultDetailView(image: self.$image, birdResult: result)
+                        }
+                        
                     } label: {
                             Button("Recognise") {
-                                recogniseImage()
+                                Task {
+                                    await recogniseImage()
+                                }
                             }
                             .font(Theme.miniHeaderFont.toFont())
                             .foregroundColor(.white)
@@ -50,18 +58,24 @@ struct PhotoDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
+            self.image = nil
         }, label: {
             Image("navigation-back")
         }))
+        .onChange(of: birdRecognitionResults) { newValue in
+            if let results = newValue, results.count > 0 {
+                isShowResult = true
+            } else {
+                isShowResult = false
+            }
+        }
     }
     
-    private func recogniseImage() {
+    private func recogniseImage() async {
         guard let birdImage = image else { return }
         let recognitionTool = BirdRecognitionTool.shared
-        let result = recognitionTool.recognise(bird: birdImage)
-        print("\(String(describing: result))")
-        self.isShowResult = true
+        let result = await recognitionTool.recognise(bird: birdImage)
+        self.birdRecognitionResults = result
 
     }
 }

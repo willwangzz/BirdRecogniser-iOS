@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import CoreML
 
-struct BirdRecognisitionResult {
+struct BirdRecognisitionResult: Equatable {
     let name: String
     let possibility: Float
     
@@ -22,19 +22,22 @@ class BirdRecognitionTool {
     
     static let shared = BirdRecognitionTool()
     
+    private let recogniser = try! Bird_510_MobileNetV2_97(configuration: MLModelConfiguration())
+    
     private init() {
     }
     
-    func recognise(bird image: UIImage) -> [BirdRecognisitionResult]? {
+    func recognise(bird image: UIImage) async -> [BirdRecognisitionResult]? {
         guard let resizedImage = image.resize(to: .init(width: 224, height: 224))?.cgImage else { return nil }
         do {
-            let recogniser = try Bird_510_MobileNetV2_97(configuration: MLModelConfiguration())
             let recogniserInput = try Bird_510_MobileNetV2_97Input(input_2With: resizedImage)
             let result = try recogniser.prediction(input: recogniserInput)
             return self.formatResult(identity: result.Identity)
-        } catch {
+        }
+        catch {
             return nil
         }
+        
     }
     
     func formatResult(identity: MLMultiArray) -> [BirdRecognisitionResult] {

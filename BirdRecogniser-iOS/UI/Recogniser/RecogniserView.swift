@@ -14,15 +14,7 @@ struct RecogniserView: View {
     
     @State private var imageDidSet = false
     
-    @State private var image: UIImage? {
-        didSet {
-            if let _ = image, oldValue != image {
-                imageDidSet = true
-            } else {
-                imageDidSet = false
-            }
-        }
-    }
+    @State private var image: UIImage?
     
     var body: some View {
         NavigationView {
@@ -49,7 +41,7 @@ struct RecogniserView: View {
                 
                 NavigationLink(isActive: $imageDidSet) {
                     if image != nil {
-                        PhotoDetailView(image: $image)
+                        PhotoDetailView(image: self.$image)
                     }
                 } label: {
                     Button(action: {
@@ -70,16 +62,15 @@ struct RecogniserView: View {
             .navigationBarTitleDisplayMode(.inline)
             .addMainGradientBackground()
             .fullScreenCover(isPresented: $showCameraPicker) {
-                ImagePicker(sourceType: .camera) { image in
-                    self.image = image
-                }
-                .ignoresSafeArea()
+                ImagePicker(sourceType: .camera, image: self.$image)
+                    .ignoresSafeArea()
             }
             .sheet(isPresented: $showPhotoPicker) {
-                ImagePicker(sourceType: .photoLibrary) { image in
-                    self.image = image
-                }
-                .ignoresSafeArea()
+                ImagePicker(sourceType: .photoLibrary, image: self.$image)
+                    .ignoresSafeArea()
+            }
+            .onChange(of: image) { newValue in
+                imageDidSet = newValue != nil
             }
             
         }

@@ -12,7 +12,7 @@ struct TakeImagesView: View {
     @State private var showCameraPicker = false
     @State private var showPhotoPicker = false
     
-    @State private var image: UIImage = UIImage()
+    @State private var image: UIImage?
     
     var body: some View {
         VStack {
@@ -41,21 +41,17 @@ struct TakeImagesView: View {
                 Text("Click Me")
             }
             
-            Image(uiImage: image)
+            Image(uiImage: ((image != nil) ? image!.resize(to: .init(width: 224, height: 224))!:UIImage()))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         }
         .fullScreenCover(isPresented: $showCameraPicker) {
-            ImagePicker(sourceType: .camera) { image in
-                self.image = image
-            }
-            .ignoresSafeArea()
+            ImagePicker(sourceType: .camera, image: self.$image)
+                .ignoresSafeArea()
         }
         .sheet(isPresented: $showPhotoPicker) {
-            ImagePicker(sourceType: .photoLibrary) { image in
-                self.image = image
-            }
-            .ignoresSafeArea()
+            ImagePicker(sourceType: .photoLibrary, image: self.$image)
+                .ignoresSafeArea()
         }
     }
 }

@@ -14,7 +14,9 @@ struct RecogniserDemoView: View {
     var body: some View {
         VStack {
             Button {
-                beginRecognising()
+                Task {
+                    await beginRecognising()
+                }
             } label: {
                 Text("Begin recognition")
             }
@@ -33,9 +35,9 @@ struct RecogniserDemoView: View {
         
     }
     
-    func beginRecognising() {
+    func beginRecognising() async {
         guard let image = UIImage(named: "EMU3.jpg") else { return }
-        let result = BirdRecognitionTool.shared.recognise(bird: image)
+        let result = await BirdRecognitionTool.shared.recognise(bird: image)
         self.recogniserResult = result
     }
 }

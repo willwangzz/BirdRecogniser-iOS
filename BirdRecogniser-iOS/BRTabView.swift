@@ -7,24 +7,6 @@
 
 import SwiftUI
 
-struct CustomTabItemView: View {
-    let title: String
-    let image: String
-    let height: CGFloat
-
-    var body: some View {
-        
-        VStack(spacing: 0) {
-            Image(systemName: image)
-                .font(.title)
-            Text(title)
-                .font(.caption)
-        }
-        .frame(height: height)
-        
-    }
-}
-
 struct BRTabView: View {
     
     @State private var selectedTab = 0
@@ -34,28 +16,40 @@ struct BRTabView: View {
             TabView(selection: $selectedTab) {
                 RecogniserView()
                     .tabItem {
-                        Image("tab-recogniser")
+                        if selectedTab == 0 {
+                            Image("tab-recogniser-selected")
+                        } else {
+                            Image("tab-recogniser")
+                        }
                         Text("Recognise")
                     }
                     .tag(0)
                 ContributeView()
                     .tabItem {
-                        Image("tab-contribution")
+                        if selectedTab == 1 {
+                            Image("tab-contribution-selected")
+                        } else {
+                            Image("tab-contribution")
+                        }
                         Text("Contribution")
                     }
                     .tag(1)
                 AboutUsView()
                     .tabItem {
-                        Image("tab-about")
+                        if selectedTab == 2 {
+                            Image("tab-about-selected")
+                        } else {
+                            Image("tab-about")
+                        }
                         Text("About us")
                     }
                     .tag(2)
-                RecogniserDemoView()
-                    .tabItem {
-                        Image("tab-recogniser")
-                        Text("RecogniseDemo")
-                    }
-                    .tag(3)
+//                RecogniserDemoView()
+//                    .tabItem {
+//                        Image("tab-recogniser")
+//                        Text("RecogniseDemo")
+//                    }
+//                    .tag(3)
             }
             
         }

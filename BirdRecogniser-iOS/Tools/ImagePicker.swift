@@ -13,23 +13,25 @@ struct ImagePicker: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode) private var presentationMode
     let sourceType: UIImagePickerController.SourceType
-    let onImagePicked: (UIImage) -> Void
+    
+    @Binding var image: UIImage? 
     
     final class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
         
         @Binding private var presentationMode: PresentationMode
         let sourceType: UIImagePickerController.SourceType
-        let onImagePicked: (UIImage) -> Void
         
-        init(presentationMode: Binding<PresentationMode>, sourceType: UIImagePickerController.SourceType, onImagePicked: @escaping (UIImage) -> Void) {
+        @Binding var image: UIImage?
+        
+        init(presentationMode: Binding<PresentationMode>, sourceType: UIImagePickerController.SourceType, image: Binding<UIImage?>) {
             _presentationMode = presentationMode
             self.sourceType = sourceType
-            self.onImagePicked = onImagePicked
+            self._image = image
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
-            onImagePicked(image)
+            self.image = image
             presentationMode.dismiss()
         }
         
@@ -39,7 +41,7 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(presentationMode: presentationMode, sourceType: sourceType, onImagePicked: onImagePicked)
+        return Coordinator(presentationMode: presentationMode, sourceType: sourceType, image: self.$image)
     }
     
     func makeUIViewController(context: Context) -> UIViewControllerType {

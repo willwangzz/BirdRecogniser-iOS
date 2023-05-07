@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import BirdRecogniser_iOS
+import SwiftUI
 
 final class BirdRecogniser_iOSTests: XCTestCase {
 
@@ -40,6 +41,24 @@ final class BirdRecogniser_iOSTests: XCTestCase {
         let resizedImage = testImage!.resize(to: .init(width: 224, height: 224))
         XCTAssertNotNil(resizedImage)
         XCTAssertEqual(CGSize(width: 224, height: 224), resizedImage!.size)
+    }
+    
+    func testUIColorFromString() throws {
+        let whiteColor = UIColor(hex: "#FFFFFF")
+        XCTAssertNotNil(whiteColor)
+        
+        let color = UIColor(hex: "#11111111")
+        XCTAssertNotNil(color)
+    }
+    
+    func testUIColorToColor() throws {
+        let whiteColor = UIColor.white
+        XCTAssertNoThrow(whiteColor.toColor())
+    }
+    
+    func testUIFontToFont() throws {
+        let uifont = UIFont.systemFont(ofSize: 10)
+        XCTAssertNoThrow(uifont.toFont())
     }
 
     func testPerformanceExample() throws {

@@ -8,34 +8,57 @@
 import XCTest
 
 final class BirdRecogniser_iOSUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    
+    let app = XCUIApplication()
+    
+    func testClickFromLibraryButton() throws {
+        app.buttons["From Library, Select your photos from your library, Select your photo"].tap()
+        app.buttons["Cancel"].tap()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testClickTakeAPhotoButton() throws {
+        app.buttons["Take a photo, Take a photo to recognise, Take a photo"].tap()
+        app.buttons["Cancel"].tap()
     }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testInputContributionInfo() {
+        
+        let tabBar = app.tabBars["Tab Bar"]
+        tabBar.buttons["Recognise"].tap()
+        
+        let contributionButton = tabBar.buttons["Contribution"]
+        contributionButton.tap()
+        tabBar.buttons["About us"].tap()
+        contributionButton.tap()
+        app.textFields["Bird Name"].tap()
+        app.textFields["Bird Name"].typeText("KIWI")
+        
+        let birdInformationTextField = app.textFields["Bird Information"]
+        birdInformationTextField.tap()
+        birdInformationTextField.typeText("KIWI INFORMATION")
+        
+        let updatePhotoTextField = app.textFields["Update Photo"]
+        updatePhotoTextField.tap()
+        updatePhotoTextField.typeText("UPLOAD IMAGE")
+        app.buttons["Contribute New"].tap()
+        
     }
+    
+//    func testSelectAPhoto() {
+//
+//        let app = XCUIApplication()
+//        let tabBar = app.tabBars["Tab Bar"]
+//        tabBar.buttons["About us"].tap()
+//        tabBar.buttons["Contribution"].tap()
+//        tabBar.buttons["Recognise"].tap()
+//        app.buttons["From Library, Select your photos from your library, Select your photo"].tap()
+//
+//
+//    }
+    
+    func testSelectAPhoto() {
+        XCUIApplication().buttons["From Library, Select your photos from your library, Select your photo"].tap()
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+        
     }
 }
