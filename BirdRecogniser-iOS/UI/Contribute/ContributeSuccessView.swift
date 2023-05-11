@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContributeSuccessView: View {
+    
+    @Binding var isSubmitted: Bool
+    
     var body: some View {
         GeometryReader { geo in
             VStack {
@@ -18,7 +21,7 @@ struct ContributeSuccessView: View {
                     .frame(height: geo.size.width)
                 Spacer()
                 Button("OK") {
-                    
+                    self.isSubmitted = !self.isSubmitted
                 }
                 .padding(.horizontal)
                 .addButtonStyle(Theme.actionColor!)
@@ -32,7 +35,9 @@ struct ContributeSuccessView: View {
 }
 
 struct ContributeSuccessView_Previews: PreviewProvider {
+    @State static var isSubmitted = true
+    
     static var previews: some View {
-        ContributeSuccessView()
+        ContributeSuccessView(isSubmitted: $isSubmitted)
     }
 }

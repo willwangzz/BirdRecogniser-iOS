@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContributeNewView: View {
+    
+    @Binding var isSubmitted: Bool
+    
     @State var birdName: String
     @State var birdInfomation: String
     @State var photo: String
@@ -29,7 +32,7 @@ struct ContributeNewView: View {
                     .addCornerAndShadow()
                 Spacer()
                 Button("Contribute New") {
-                
+                    self.isSubmitted = true
                 }
                 .padding(.horizontal)
                 .addButtonStyle(Theme.actionColor!)
@@ -47,16 +50,19 @@ struct ContributeNewView: View {
 extension View {
     func addCornerAndShadow() -> some View {
         self
-            .frame(height: 58)
+            .frame(height: 60)
             .padding(.horizontal)
             .background(UIColor.white.toColor())
-            .cornerRadius(29)
+            .cornerRadius(30)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.1), radius: 20)
     }
 }
 
 struct ContributeNewView_Previews: PreviewProvider {
+    
+    @State static var isSubmitted = true
+    
     static var previews: some View {
-        ContributeNewView(birdName: "", birdInfomation: "", photo: "")
+        ContributeNewView(isSubmitted: $isSubmitted, birdName: "", birdInfomation: "", photo: "")
     }
 }

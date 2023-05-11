@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 import CoreML
 
-struct BirdRecognisitionResult: Equatable {
+struct BirdRecognisitionResult: Equatable, Hashable {
+    
     let name: String
     let possibility: Float
     

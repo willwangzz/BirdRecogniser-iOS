@@ -12,9 +12,7 @@ struct PhotoDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @Binding var image: UIImage?
-    
-    @State var isShowResult: Bool = false
-    
+
     @State var birdRecognitionResults: [BirdRecognisitionResult]?
     
     var body: some View {
@@ -31,17 +29,10 @@ struct PhotoDetailView: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    NavigationLink(isActive: self.$isShowResult) {
-                        if let result = birdRecognitionResults?.first {
-                            RecogniseResultDetailView(image: self.$image, birdResult: result)
-                        }
-                        
+                    NavigationLink {
+                        RecogniseResultsView(image: self.$image)
                     } label: {
-                            Button("Recognise") {
-                                Task {
-                                    await recogniseImage()
-                                }
-                            }
+                        Text("Recognise")
                             .font(Theme.miniHeaderFont.toFont())
                             .foregroundColor(.white)
                             .padding(.horizontal, 40.0)
@@ -62,22 +53,9 @@ struct PhotoDetailView: View {
         }, label: {
             Image("navigation-back")
         }))
-        .onChange(of: birdRecognitionResults) { newValue in
-            if let results = newValue, results.count > 0 {
-                isShowResult = true
-            } else {
-                isShowResult = false
-            }
-        }
     }
     
-    private func recogniseImage() async {
-        guard let birdImage = image else { return }
-        let recognitionTool = BirdRecognitionTool.shared
-        let result = await recognitionTool.recognise(bird: birdImage)
-        self.birdRecognitionResults = result
-
-    }
+    
 }
 
 struct PhotoDetailView_Previews: PreviewProvider {

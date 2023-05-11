@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContributeView: View {
-    var isSubmitted: Bool = false
+    @State var isSubmitted: Bool = false
+    
     var body: some View {
         if isSubmitted {
-            ContributeSuccessView()
+            ContributeSuccessView(isSubmitted: $isSubmitted)
         } else {
-            ContributeNewView(birdName: "", birdInfomation: "", photo: "")
+            ContributeNewView(isSubmitted: $isSubmitted, birdName: "", birdInfomation: "", photo: "")
         }
         
     }
 }
 
 struct ContributeView_Previews: PreviewProvider {
+    @State static var isSubmitted = false
+    
     static var previews: some View {
-        ContributeView(isSubmitted: true)
+        ContributeView()
     }
 }

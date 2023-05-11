@@ -61,6 +61,7 @@
 		BEECBB9829FCD994006B805E /* NavigationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9729FCD994006B805E /* NavigationDemoView.swift */; };
 		BEECBB9C29FE70A9006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 		BEECBB9F2A0611F9006B805E /* PopToRootDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */; };
+		BEEFCD432A0C8EE4002AA678 /* RecogniseResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFCD422A0C8EE4002AA678 /* RecogniseResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		BEECBB9729FCD994006B805E /* NavigationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemoView.swift; sourceTree = "<group>"; };
 		BEECBB9929FE6F25006B805E /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootDemo.swift; sourceTree = "<group>"; };
+		BEEFCD422A0C8EE4002AA678 /* RecogniseResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniseResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				BE33D4AF29EAAD35002820C8 /* RecogniserView.swift */,
 				BE33D4BE29F4F116002820C8 /* PhotoDetailView.swift */,
+				BEEFCD422A0C8EE4002AA678 /* RecogniseResultsView.swift */,
 				BE33D4C029F5DEC1002820C8 /* RecogniseResultDetailView.swift */,
 				BE33D4B629EABF15002820C8 /* RecogniserButton.swift */,
 			);
@@ -496,6 +499,7 @@
 				BED5CD6229E01B35008F5F8E /* BRTabView.swift in Sources */,
 				BE33D4B729EABF15002820C8 /* RecogniserButton.swift in Sources */,
 				BE33D4BD29F4E1E4002820C8 /* ViewExtension.swift in Sources */,
+				BEEFCD432A0C8EE4002AA678 /* RecogniseResultsView.swift in Sources */,
 				BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */,
 				BE33D4B529EAB462002820C8 /* UIColorExtension.swift in Sources */,
 				BE33D4D429F7CFB1002820C8 /* ContributeNewView.swift in Sources */,
