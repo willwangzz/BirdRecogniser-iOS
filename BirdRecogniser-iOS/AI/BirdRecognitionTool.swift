@@ -38,7 +38,6 @@ class BirdRecognitionTool {
         catch {
             return nil
         }
-        
     }
     
     func formatResult(identity: MLMultiArray) -> [BirdRecognisitionResult] {

@@ -62,6 +62,7 @@
 		BEECBB9C29FE70A9006B805E /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BEECBB9929FE6F25006B805E /* testImage.png */; };
 		BEECBB9F2A0611F9006B805E /* PopToRootDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */; };
 		BEEFCD432A0C8EE4002AA678 /* RecogniseResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFCD422A0C8EE4002AA678 /* RecogniseResultsView.swift */; };
+		BEEFCD452A0F0A4B002AA678 /* ContributeBirdImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFCD442A0F0A4B002AA678 /* ContributeBirdImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		BEECBB9929FE6F25006B805E /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		BEECBB9E2A0611F9006B805E /* PopToRootDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootDemo.swift; sourceTree = "<group>"; };
 		BEEFCD422A0C8EE4002AA678 /* RecogniseResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecogniseResultsView.swift; sourceTree = "<group>"; };
+		BEEFCD442A0F0A4B002AA678 /* ContributeBirdImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeBirdImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				BE33D4C329F5FA13002820C8 /* ContributeView.swift */,
 				BE33D4D329F7CFB1002820C8 /* ContributeNewView.swift */,
+				BEEFCD442A0F0A4B002AA678 /* ContributeBirdImageView.swift */,
 				BE33D4C529F6106E002820C8 /* ContributeTitleView.swift */,
 				BE33D4C729F6113B002820C8 /* ContributeSubmittedView.swift */,
 				BE33D4C929F624FE002820C8 /* ContributeSuccessView.swift */,
@@ -502,6 +505,7 @@
 				BEEFCD432A0C8EE4002AA678 /* RecogniseResultsView.swift in Sources */,
 				BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */,
 				BE33D4B529EAB462002820C8 /* UIColorExtension.swift in Sources */,
+				BEEFCD452A0F0A4B002AA678 /* ContributeBirdImageView.swift in Sources */,
 				BE33D4D429F7CFB1002820C8 /* ContributeNewView.swift in Sources */,
 				BE33D4C129F5DEC1002820C8 /* RecogniseResultDetailView.swift in Sources */,
 				BE33D4C629F6106E002820C8 /* ContributeTitleView.swift in Sources */,
