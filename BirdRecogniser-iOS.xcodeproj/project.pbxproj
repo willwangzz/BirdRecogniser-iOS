@@ -23,6 +23,8 @@
 		BE33D4D029F63322002820C8 /* AboutUsTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4CF29F63322002820C8 /* AboutUsTitleView.swift */; };
 		BE33D4D229F68AE5002820C8 /* AboutUsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4D129F68AE5002820C8 /* AboutUsContentView.swift */; };
 		BE33D4D429F7CFB1002820C8 /* ContributeNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4D329F7CFB1002820C8 /* ContributeNewView.swift */; };
+		BE5CEF5B2A1054BB005BFAFC /* ContributeSelectPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF5A2A1054BB005BFAFC /* ContributeSelectPhotoView.swift */; };
+		BE5CEF5D2A109488005BFAFC /* ContributeBirdInfomationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF5C2A109488005BFAFC /* ContributeBirdInfomationView.swift */; };
 		BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */; };
 		BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3929E01973008F5F8E /* ContentView.swift */; };
 		BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD3B29E01974008F5F8E /* Assets.xcassets */; };
@@ -99,6 +101,8 @@
 		BE33D4CF29F63322002820C8 /* AboutUsTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTitleView.swift; sourceTree = "<group>"; };
 		BE33D4D129F68AE5002820C8 /* AboutUsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContentView.swift; sourceTree = "<group>"; };
 		BE33D4D329F7CFB1002820C8 /* ContributeNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeNewView.swift; sourceTree = "<group>"; };
+		BE5CEF5A2A1054BB005BFAFC /* ContributeSelectPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeSelectPhotoView.swift; sourceTree = "<group>"; };
+		BE5CEF5C2A109488005BFAFC /* ContributeBirdInfomationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeBirdInfomationView.swift; sourceTree = "<group>"; };
 		BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BirdRecogniser-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSApp.swift; sourceTree = "<group>"; };
 		BED5CD3929E01973008F5F8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,9 +201,11 @@
 				BE33D4C329F5FA13002820C8 /* ContributeView.swift */,
 				BE33D4D329F7CFB1002820C8 /* ContributeNewView.swift */,
 				BEEFCD442A0F0A4B002AA678 /* ContributeBirdImageView.swift */,
+				BE5CEF5C2A109488005BFAFC /* ContributeBirdInfomationView.swift */,
 				BE33D4C529F6106E002820C8 /* ContributeTitleView.swift */,
 				BE33D4C729F6113B002820C8 /* ContributeSubmittedView.swift */,
 				BE33D4C929F624FE002820C8 /* ContributeSuccessView.swift */,
+				BE5CEF5A2A1054BB005BFAFC /* ContributeSelectPhotoView.swift */,
 			);
 			path = Contribute;
 			sourceTree = "<group>";
@@ -516,6 +522,8 @@
 				BE33D4CE29F62F33002820C8 /* AboutUsView.swift in Sources */,
 				BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */,
 				BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */,
+				BE5CEF5B2A1054BB005BFAFC /* ContributeSelectPhotoView.swift in Sources */,
+				BE5CEF5D2A109488005BFAFC /* ContributeBirdInfomationView.swift in Sources */,
 				BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */,
 				BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */,
 				BE33D4B929ED3053002820C8 /* Theme.swift in Sources */,
@@ -685,8 +693,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -717,8 +726,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

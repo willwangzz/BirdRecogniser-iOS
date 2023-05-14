@@ -38,7 +38,6 @@ extension View {
 extension View {
     func addButtonStyle(_ backgroundColor: UIColor) -> some View {
         self
-            .font(Theme.miniHeaderFont.toFont())
             .foregroundColor(.white)
             .padding(.horizontal, 40.0)
             .frame(height: 40)

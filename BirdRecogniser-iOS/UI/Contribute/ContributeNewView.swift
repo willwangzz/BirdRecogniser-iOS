@@ -15,28 +15,38 @@ struct ContributeNewView: View {
     @State var birdInfomation: String
     @State var photo: String
     
+    @State var image: UIImage? = nil
+    
     var body: some View {
         GeometryReader { geo in
             VStack {
                 ContributeTitleView()
                 Spacer()
-                TextField("Bird Name", text: $birdName)
-                    .addCornerAndShadow()
+                    .frame(height: 43)
+                HStack {
+                    ContributeBirdImageView(image: self.$image)
+                    Spacer()
+                        .frame(width: 10)
+                    TextField("Bird Name", text: $birdName)
+                        .font(Theme.miniHeaderFont.toFont())
+                        .frame(height: 88)
+                        .addCornerAndShadow()
+                }
                 Spacer()
                     .frame(height: 43)
-                TextField("Bird Information", text: $birdInfomation)
+                ContributeBirdInfomationView(birdInfomation: $birdInfomation)
+                    .frame(maxHeight: .infinity)
                     .addCornerAndShadow()
+                
                 Spacer()
                     .frame(height: 43)
-                TextField("Update Photo", text: $photo)
-                    .addCornerAndShadow()
-                Spacer()
                 Button("Contribute New") {
                     self.isSubmitted = true
                 }
                 .padding(.horizontal)
                 .addButtonStyle(Theme.actionColor!)
                 Spacer()
+                    .frame(height: 43)
             }
             .frame(width: geo.size.width)
         }
@@ -50,7 +60,6 @@ struct ContributeNewView: View {
 extension View {
     func addCornerAndShadow() -> some View {
         self
-            .frame(height: 60)
             .padding(.horizontal)
             .background(UIColor.white.toColor())
             .cornerRadius(30)
