@@ -16,7 +16,7 @@ struct RecogniseResultDetailView: View {
     let showBottomLine: Bool
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Spacer()
                 .frame(height: 10)
             
@@ -31,7 +31,7 @@ struct RecogniseResultDetailView: View {
             Spacer()
                 .frame(height: 10)
             
-            Text("Tui are boisterous, medium-sized, common and widespread bird of forest and suburbia – unless you live in Canterbury. They look black from a distance, but in good light tui have a blue, green and bronze iridescent sheen, and distinctive white throat tufts (poi). ")
+            Text(birdResult.information ?? "")
             
             if showBottomLine {
                 Rectangle()
@@ -49,7 +49,7 @@ struct RecogniseResultDetailView: View {
 
 struct RecogniseResultDetailView_Previews: PreviewProvider {
     
-    static let result = BirdRecognisitionResult(name: "EMU", possibility: 0.980984848845875774)
+    static let result = BirdRecognisitionResult(name: "EMU", possibility: 0.980984848845875774, information: "AAA")
     
     static var previews: some View {
         RecogniseResultDetailView(birdResult: result, showBottomLine: true)

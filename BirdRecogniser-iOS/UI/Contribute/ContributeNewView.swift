@@ -52,6 +52,9 @@ struct ContributeNewView: View {
         }
         .padding(.horizontal, 30.0)
         .addMainGradientBackground()
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
     }
     
     

@@ -80,10 +80,13 @@ struct ContributeBirdImageView_Previews: PreviewProvider {
     @State static var image1: UIImage? = UIImage(named: "EMU3.jpg")
     
     static var previews: some View {
-        ContributeBirdImageView(image: $image1)
         
         ContributeAddBirdView()
         
         ContributeBirdAddedView(image: $image1)
+        
+        ContributeBirdImageView(image: $image)
+        
+        ContributeBirdImageView(image: $image1)
     }
 }

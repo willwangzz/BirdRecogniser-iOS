@@ -26,11 +26,11 @@ final class BirdRecogniser_iOSTests: XCTestCase {
         XCTAssertEqual(Unmanaged.passUnretained(recogniseTool).toOpaque(), Unmanaged.passUnretained(recogniseTool1).toOpaque())
     }
     
-    func testRecogniseToolRecognise() throws {
+    func testRecogniseToolRecognise() async throws {
         let testImage = UIImage(named: "WILD TURKEY4.jpg")
         XCTAssertNotNil(testImage)
         let recogniseTool = BirdRecognitionTool.shared
-        let result = recogniseTool.recognise(bird: testImage!)
+        let result = await recogniseTool.recognise(bird: testImage!)
         XCTAssertNotNil(result)
         XCTAssertLessThanOrEqual(3, result!.count)
     }

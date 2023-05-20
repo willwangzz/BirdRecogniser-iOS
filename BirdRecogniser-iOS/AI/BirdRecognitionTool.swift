@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 import CoreML
+import Alamofire
 
 struct BirdRecognisitionResult: Equatable, Hashable {
     
     let name: String
     let possibility: Float
+    var information: String?
     
     func description() -> String {
         return "Bird name is \(name), the possibility is \(possibility)"

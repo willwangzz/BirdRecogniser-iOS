@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContributeTitleView: View {
     var body: some View {
-        Spacer()
-            .frame(height: 10)
         Text("Found New?\nContribute New!")
             .foregroundColor(Theme.mainColor?.toColor())
             .multilineTextAlignment(.center)

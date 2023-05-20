@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct RecogniseResultsView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -53,14 +54,70 @@ struct RecogniseResultsView: View {
         let recognitionTool = BirdRecognitionTool.shared
         let result = await recognitionTool.recognise(bird: birdImage)
         self.birdRecognitionResults = result
+        if let birdsName = result?.map({ $0.name }) {
+            self.getInformation(of: birdsName)
+        }
+    }
+}
 
+extension RecogniseResultsView: DataManagerProtocol {
+    
+    var apiName: String {
+        return "RecogniseAPI/birdsinfo"
+    }
+    
+    private func getInformation(of birdsName: [String]) {
+        guard birdsName.count > 0 else {
+            return
+        }
+        guard let nameString = birdsName.joined(separator: ",").addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else {
+            return
+        }
+        
+        let params = "?birdNames=\(nameString)"
+        
+        guard let url = URL(string: "\(baseURL)\(apiName)\(params)") else { return }
+        
+        var urlRequest = URLRequest(url: url)
+        
+        urlRequest.httpMethod = "POST"
+        
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            if let error = error {
+                print("Request error: ", error)
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse else { return }
+            
+            if response.statusCode == 200 {
+                guard let data = data else { return }
+                DispatchQueue.main.async {
+                    do {
+                        var newResults = [BirdRecognisitionResult]()
+                        let array = try JSONDecoder().decode([BirdGeneralInformation].self, from: data)
+                        if let oldResults = birdRecognitionResults, array.count > 0 {
+                            for oldResult in oldResults {
+                                let generalInfo = array.first(where: { $0.predictedLabel == oldResult.name })?.generalInfo
+                                var newResult = oldResult
+                                newResult.information = generalInfo
+                                newResults.append(newResult)
+                            }
+                            birdRecognitionResults = newResults
+                        }
+                        
+                    } catch let error {
+                        print("Error decoding: ", error)
+                    }
+                }
+            }
+        }
+        dataTask.resume()
     }
 }
 
 struct RecogniseResultsView_Previews: PreviewProvider {
     @State static var image = UIImage(named: "EMU0.jpg")
-    
-    static let result = BirdRecognisitionResult(name: "EMU", possibility: 0.980984848845875774)
     
     static var previews: some View {
         if #available(iOS 16.0, *) {

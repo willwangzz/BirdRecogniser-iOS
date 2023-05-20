@@ -31,8 +31,11 @@ struct ContributeBirdInfomationView: View {
 
 struct ContributeBirdInfomationView_Previews: PreviewProvider {
     @State static var birdInfomation: String = ""
+    @State static var birdInfomation1: String = "Bird KIWI...."
     
     static var previews: some View {
         ContributeBirdInfomationView(birdInfomation: $birdInfomation)
+        
+        ContributeBirdInfomationView(birdInfomation: $birdInfomation1)
     }
 }
