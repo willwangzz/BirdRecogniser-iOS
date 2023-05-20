@@ -14,7 +14,7 @@ struct ContributeView: View {
         if isSubmitted {
             ContributeSuccessView(isSubmitted: $isSubmitted)
         } else {
-            ContributeNewView(isSubmitted: $isSubmitted, birdName: "", birdInfomation: "", photo: "")
+            ContributeNewView(isSubmitted: $isSubmitted, birdName: "", birdInfomation: "")
         }
         
     }
