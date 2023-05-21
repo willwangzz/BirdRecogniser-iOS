@@ -25,7 +25,6 @@
 		BE33D4D429F7CFB1002820C8 /* ContributeNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33D4D329F7CFB1002820C8 /* ContributeNewView.swift */; };
 		BE5CEF5B2A1054BB005BFAFC /* ContributeSelectPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF5A2A1054BB005BFAFC /* ContributeSelectPhotoView.swift */; };
 		BE5CEF5D2A109488005BFAFC /* ContributeBirdInfomationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF5C2A109488005BFAFC /* ContributeBirdInfomationView.swift */; };
-		BE5CEF602A10CCB5005BFAFC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BE5CEF5F2A10CCB5005BFAFC /* Alamofire */; };
 		BE5CEF622A10CD4E005BFAFC /* APIDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF612A10CD4E005BFAFC /* APIDemoView.swift */; };
 		BE5CEF662A18C9C6005BFAFC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF652A18C9C6005BFAFC /* DataManager.swift */; };
 		BE5CEF682A18DB9D005BFAFC /* BirdGeneralInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF672A18DB9D005BFAFC /* BirdGeneralInformation.swift */; };
@@ -161,7 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5CEF602A10CCB5005BFAFC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +380,6 @@
 			);
 			name = "BirdRecogniser-iOS";
 			packageProductDependencies = (
-				BE5CEF5F2A10CCB5005BFAFC /* Alamofire */,
 			);
 			productName = "BirdRecogniser-iOS";
 			productReference = BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */;
@@ -457,7 +454,6 @@
 			);
 			mainGroup = BED5CD2B29E01973008F5F8E;
 			packageReferences = (
-				BE5CEF5E2A10CCB5005BFAFC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = BED5CD3529E01973008F5F8E /* Products */;
 			projectDirPath = "";
@@ -891,25 +887,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BE5CEF5E2A10CCB5005BFAFC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BE5CEF5F2A10CCB5005BFAFC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BE5CEF5E2A10CCB5005BFAFC /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BED5CD2C29E01973008F5F8E /* Project object */;
 }

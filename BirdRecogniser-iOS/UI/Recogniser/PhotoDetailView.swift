@@ -33,6 +33,7 @@ struct PhotoDetailView: View {
                         RecogniseResultsView(image: self.$image)
                     } label: {
                         Text("Recognise")
+                            .accessibilityIdentifier("recognise-button")
                             .font(Theme.miniHeaderFont.toFont())
                             .foregroundColor(.white)
                             .padding(.horizontal, 40.0)
