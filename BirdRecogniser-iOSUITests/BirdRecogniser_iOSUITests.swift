@@ -45,7 +45,7 @@ final class BirdRecogniser_iOSUITests: XCTestCase {
         tabBar.buttons["Recognise"].tap()
     }
     
-    func testInputContributionInfo() {
+    func testContributionInfo() {
         self.launchApp()
         
         let tabBar = app.tabBars["Tab Bar"]
@@ -74,12 +74,12 @@ final class BirdRecogniser_iOSUITests: XCTestCase {
         
         app.buttons["Contribute New"].tap()
         
-//        sleep(5)
+        sleep(5)
         
         XCTAssertNotNil(app.buttons["OK"])
     }
     
-    func testSelectAPhoto() {
+    func testRecogniseAnImage() {
         self.launchApp()
         
         let tabBar = app.tabBars["Tab Bar"]
