@@ -28,6 +28,7 @@
 		BE5CEF622A10CD4E005BFAFC /* APIDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF612A10CD4E005BFAFC /* APIDemoView.swift */; };
 		BE5CEF662A18C9C6005BFAFC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF652A18C9C6005BFAFC /* DataManager.swift */; };
 		BE5CEF682A18DB9D005BFAFC /* BirdGeneralInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5CEF672A18DB9D005BFAFC /* BirdGeneralInformation.swift */; };
+		BEC8AA642A233F6F00840378 /* Bird_517_MobileNetV2_97.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = BEC8AA632A233F6F00840378 /* Bird_517_MobileNetV2_97.mlpackage */; };
 		BED5CD3829E01973008F5F8E /* BirdRecogniser_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */; };
 		BED5CD3A29E01973008F5F8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD3929E01973008F5F8E /* ContentView.swift */; };
 		BED5CD3C29E01974008F5F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD3B29E01974008F5F8E /* Assets.xcassets */; };
@@ -39,7 +40,6 @@
 		BED5CD6729E0D5FB008F5F8E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */; };
 		BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */; };
 		BED5CD6C29E22F17008F5F8E /* ImageAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */; };
-		BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */; };
 		BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */; };
 		BED5CD7529E25744008F5F8E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5CD7429E25744008F5F8E /* UIImageExtension.swift */; };
 		BED5CD8B29E25821008F5F8E /* WILD TURKEY4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BED5CD7729E25821008F5F8E /* WILD TURKEY4.jpg */; };
@@ -110,6 +110,7 @@
 		BE5CEF642A137D0E005BFAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE5CEF652A18C9C6005BFAFC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BE5CEF672A18DB9D005BFAFC /* BirdGeneralInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGeneralInformation.swift; sourceTree = "<group>"; };
+		BEC8AA632A233F6F00840378 /* Bird_517_MobileNetV2_97.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Bird_517_MobileNetV2_97.mlpackage; sourceTree = "<group>"; };
 		BED5CD3429E01973008F5F8E /* BirdRecogniser-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BirdRecogniser-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED5CD3729E01973008F5F8E /* BirdRecogniser_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecogniser_iOSApp.swift; sourceTree = "<group>"; };
 		BED5CD3929E01973008F5F8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,7 +125,6 @@
 		BED5CD6629E0D5FB008F5F8E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BED5CD6929E0DF7F008F5F8E /* TakeImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImagesView.swift; sourceTree = "<group>"; };
 		BED5CD6B29E22F17008F5F8E /* ImageAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAccessManager.swift; sourceTree = "<group>"; };
-		BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Bird_510_MobileNetV2_97.mlpackage; sourceTree = "<group>"; };
 		BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdRecognitionTool.swift; sourceTree = "<group>"; };
 		BED5CD7429E25744008F5F8E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		BED5CD7729E25821008F5F8E /* WILD TURKEY4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WILD TURKEY4.jpg"; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				BED5CD7629E25821008F5F8E /* TestImages */,
-				BED5CD7029E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage */,
+				BEC8AA632A233F6F00840378 /* Bird_517_MobileNetV2_97.mlpackage */,
 				BED5CD7229E251D5008F5F8E /* BirdRecognitionTool.swift */,
 			);
 			path = AI;
@@ -533,7 +533,6 @@
 				BE33D4B729EABF15002820C8 /* RecogniserButton.swift in Sources */,
 				BE33D4BD29F4E1E4002820C8 /* ViewExtension.swift in Sources */,
 				BEEFCD432A0C8EE4002AA678 /* RecogniseResultsView.swift in Sources */,
-				BED5CD7129E2518E008F5F8E /* Bird_510_MobileNetV2_97.mlpackage in Sources */,
 				BE33D4B529EAB462002820C8 /* UIColorExtension.swift in Sources */,
 				BE5CEF682A18DB9D005BFAFC /* BirdGeneralInformation.swift in Sources */,
 				BEEFCD452A0F0A4B002AA678 /* ContributeBirdImageView.swift in Sources */,
@@ -553,6 +552,7 @@
 				BED5CD6A29E0DF7F008F5F8E /* TakeImagesView.swift in Sources */,
 				BED5CD7329E251D5008F5F8E /* BirdRecognitionTool.swift in Sources */,
 				BE33D4B929ED3053002820C8 /* Theme.swift in Sources */,
+				BEC8AA642A233F6F00840378 /* Bird_517_MobileNetV2_97.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

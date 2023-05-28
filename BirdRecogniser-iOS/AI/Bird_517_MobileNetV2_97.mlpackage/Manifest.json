@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "56F03BB9-A22D-4E82-83E2-98640D93BA80": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "A3029DF2-708C-45CD-B6BE-AF0E7533D785": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "Bird_517_MobileNetV2_97.mlmodel",
+            "path": "com.apple.CoreML/Bird_517_MobileNetV2_97.mlmodel"
+        },
+        "E9B912B5-2FD7-40BE-AE2B-F9D2ADA50EAD": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "A3029DF2-708C-45CD-B6BE-AF0E7533D785"
+}

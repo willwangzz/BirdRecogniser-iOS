@@ -62,11 +62,12 @@ extension ContributeNewView: DataManagerProtocol {
     
     var apiName: String {
         return "MobileSubmissionAPI/submitBird"
+//        return "SubmissionAPI"
     }
     
     private func submit() {
         
-        
+            
         guard let url = URL(string: "\(baseURL)\(apiName)") else { return }
         
         let boundary = "Boundary-\(NSUUID().uuidString)"
@@ -77,8 +78,12 @@ extension ContributeNewView: DataManagerProtocol {
         urlRequest.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         let parameters = ["birdName": birdName, "birdInfo": birdInfomation]
-        
+
         urlRequest.httpBody = createBodyWithParameters(parameters: parameters, filePathKey: "birdImage", imageDataKey: image?.resize(to: .init(width: 224, height: 224))?.jpegData(compressionQuality: 1), boundary: boundary)
+        
+//        let parameters = ["BirdName": birdName, "BirdInformation": birdInfomation, "FileName": "image_name.jpg"]
+//
+//        urlRequest.httpBody = createBodyWithParameters(parameters: parameters, filePathKey: "BirdImage", imageDataKey: image?.resize(to: .init(width: 224, height: 224))?.jpegData(compressionQuality: 1), boundary: boundary)
         
         let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
