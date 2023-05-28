@@ -14,7 +14,7 @@ struct ContributeSubmittedView: View {
                 Image("contribute-good")
                     .padding(.bottom)
 
-                Text("Your Contribution has been submitted.")
+                Text("Your Contribute has been submitted.")
                     .font(Font.system(size: 36, weight: .bold))
                     .foregroundColor(Theme.mainColor?.toColor())
                     .multilineTextAlignment(.center)

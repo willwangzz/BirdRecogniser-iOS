@@ -31,7 +31,7 @@ struct BRTabView: View {
                         } else {
                             Image("tab-contribution")
                         }
-                        Text("Contribution")
+                        Text("Contribute")
                     }
                     .tag(1)
                 AboutUsView()

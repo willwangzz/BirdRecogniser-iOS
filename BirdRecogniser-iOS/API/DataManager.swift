@@ -13,7 +13,7 @@ class DataManager: NSObject {
     
     var session: URLSession?
     
-    let baseURL = "https://192.168.1.14:44353/api/"
+    let baseURL = "https://192.168.1.22:44353/api/"
         
     private override init() {
         super.init()
