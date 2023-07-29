@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 import CoreML
-import Alamofire
 
 struct BirdRecognisitionResult: Equatable, Hashable {
     
