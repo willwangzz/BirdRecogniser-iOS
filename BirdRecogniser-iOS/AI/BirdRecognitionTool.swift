@@ -55,9 +55,6 @@ class BirdRecognitionTool {
         formattedResults.sort { $0.possibility > $1.possibility }
         
         if let possibilit = formattedResults.first?.possibility, possibilit > 0.85 {
-//            var array = Array<BirdRecognisitionResult>()
-//            array.append(formattedResults.first!)
-//            return array
             return [formattedResults.first!]
         }
         

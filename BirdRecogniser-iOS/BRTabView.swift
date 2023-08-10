@@ -44,12 +44,6 @@ struct BRTabView: View {
                         Text("About us")
                     }
                     .tag(2)
-//                RecogniserDemoView()
-//                    .tabItem {
-//                        Image("tab-recogniser")
-//                        Text("RecogniseDemo")
-//                    }
-//                    .tag(3)
             }
             
         }
